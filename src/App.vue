@@ -32,12 +32,12 @@ export default {
       count: [0, 0, 0],
       products: ['역삼동 원룸', '천호동 원룸', '마포구 원룸'],
       menu: ['Home', 'Products', 'About']
+
     }
   },
   methods: {
     increase() {
-      this.count++;
-    },
+      this.count++;    },
     priceAsc() {
       this.onerooms.sort(function(a, b){
         return a.price - b.price
@@ -86,6 +86,7 @@ div {
   border-radius: 8px;
   padding: 20px;
 }
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -97,8 +98,7 @@ div {
   background: darkslateblue;
   padding: 15px;
   border-radius: 5px;
-}
-.menu a {
+}.menu a {
   color: white;
   padding: 10px;
 }
