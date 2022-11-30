@@ -93,7 +93,6 @@ div {
   text-align: center;
   color: #2c3e50;
 }
-
 .menu {
   background: darkslateblue;
   padding: 15px;
