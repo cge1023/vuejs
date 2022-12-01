@@ -1,5 +1,5 @@
 <template>
-  <div class="discount"  v-if="discount > 1">
+  <div class="discount">
     <h3>지금 결제하면 {{ discount }}% 할인</h3>
   </div>
 </template>
@@ -14,7 +14,10 @@ export default {
       }
     },
     mounted() {
-      setInterval(()=>{this.discount--}, 1000)
+      setInterval(()=>{ 
+        if (this.discount > 0) this.discount--
+        else clearInterval();
+      }, 1000)
   }
 }
 </script>
